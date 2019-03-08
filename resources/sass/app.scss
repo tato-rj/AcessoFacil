@@ -1,14 +1,19 @@
-
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
-
-// Variables
+@import 'bootstrap';
 @import 'variables';
+@import 'responsive.app';
+@import 'components/icons';
+@import 'components/pagination';
+@import 'components/loaders';
+@import 'components/custom';
+@import 'components/share';
+@import 'components/hamburgers';
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+button:focus {outline:0;}
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+.nav-tabs .nav-link:not(.active) {
+  opacity: .6;
+}
+
+.col-default {
+	@extend .col-lg-8, .col-md-10, .col-12, .mx-auto;
 }

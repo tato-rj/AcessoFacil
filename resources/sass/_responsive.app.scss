@@ -1,0 +1,104 @@
+@include media-breakpoint-down(sm) {
+	.xs-w-100 {
+		width: 100%;
+	}
+
+	.display-4 {
+	    font-size: 2.5rem;
+	}
+	.mb-4-sm {
+		margin-bottom: 1.5rem !important;
+	}
+
+	.step-icon {
+	    width: 4rem !important;
+	}
+
+	.plans {
+		.icons {
+			margin-bottom: 1.5em !important; 
+		}
+		.description {
+			margin: 0 !important;
+		}
+	}
+
+	.alternate-divs {
+		.row {
+			> div:first-of-type {
+				order: 2;
+			}
+			> div:last-of-type {
+				order: 1;
+			}
+		}
+	}
+
+	.filter-form {
+		width: 100%;
+
+		select {
+			width: 50% !important;
+		}
+	}
+
+	.fc-right, .fc-left {
+		margin-bottom: 1rem;
+	}
+
+	button#logout {
+	    color: #212529 !important;
+	    background-color: #f8f9fa !important;
+	    border-color: #f8f9fa !important;
+	}
+}
+@include media-breakpoint-down(md) {
+	.navbar {
+		padding-left: 1.5rem !important;
+	}
+
+	.navbar-collapse {
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100vh;
+	  background: black;
+	  text-align: center;
+	  padding-top: 6em;
+	  font-size: 1.25em;
+
+	  .btn {
+	  	font-size: 1em;
+	  	margin-top: 1.25em !important;
+	  }
+
+	  .nav-link {
+	  	color: rgba(255, 255, 255, 0.5)!important;
+	  }
+	}
+
+	select[name="time"], select[name="participants"] {
+		border-left: 1px solid #ced4da!important;
+	}
+
+	.toggle-finder {
+		width: 100%;
+	}
+
+	.plans {
+		.cover {
+			height: 250px;
+		}
+
+		.description {
+			margin-right: 0 !important;
+		}
+	}
+}
+@include media-breakpoint-down(lg) {
+
+}
+@include media-breakpoint-down(xl) {
+
+}
