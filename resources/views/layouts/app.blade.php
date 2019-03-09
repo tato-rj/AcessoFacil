@@ -34,7 +34,7 @@
         <main>
             @yield('content')
         </main>
-        {{-- @include('layouts.footer.layout') --}}
+        @include('layouts.footer.layout')
     </div>
 
 @if(session()->has('status'))
