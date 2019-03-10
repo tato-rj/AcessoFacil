@@ -7,6 +7,38 @@
 @import 'components/custom';
 @import 'components/share';
 @import 'components/hamburgers';
+@import 'components/swiper';
+@import 'components/animations';
+
+p {
+    color: #536273;
+}
+
+a.nav-link {
+    color: inherit;
+}
+
+.nav .active {
+    background-color: white !important;
+    color: inherit !important;
+}
+
+.nav .active, .btn-shadow {
+    box-shadow: 0 8px 35px 0 rgba(50, 50, 93, 0.1), 0 5px 15px 0 rgba(0, 0, 0, 0.07);
+    transition: .2s;
+}
+
+.nav .active:hover, .btn-shadow:hover {
+    box-shadow: 0 10px 35px 0 rgba(50, 50, 93, 0.1), 0 10px 25px 0 rgba(0, 0, 0, 0.07) ;
+}
+
+.nav .active:active, .btn-shadow:active, .nav .active:visited, .btn-shadow:visited {
+    box-shadow: 0 15px 35px 0 rgba(50, 50, 93, 0.1), 0 5px 15px 0 rgba(0, 0, 0, 0.07) !important;
+}
+
+.nav .active:focus {
+    box-shadow: 0 8px 35px 0 rgba(50, 50, 93, 0.1), 0 5px 15px 0 rgba(0, 0, 0, 0.07) !important;
+}
 
 button:focus {outline:0;}
 
