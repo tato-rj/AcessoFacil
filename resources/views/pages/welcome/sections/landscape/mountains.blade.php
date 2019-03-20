@@ -4,7 +4,7 @@
 		height: 0;
 		border-style: solid;
 		border-width: 0 220px 160px 220px;
-		border-color: transparent transparent #87ceea transparent;
+		border-color: transparent transparent #eaf8fc transparent;
 		margin-left: -100px;
 		z-index: 3"></div>
 
@@ -12,7 +12,7 @@
 		height: 0;
 		border-style: solid;
 		border-width: 0 140px 100px 140px;
-		border-color: transparent transparent #53aacc transparent;
+		border-color: transparent transparent #f5fbfc transparent;
 		margin-left: -80px;
 		z-index: 2"></div>
 
@@ -20,7 +20,7 @@
 		height: 0;
 		border-style: solid;
 		border-width: 0 110px 70px 110px;
-		border-color: transparent transparent #3a94b7 transparent;
+		border-color: transparent transparent #dceff4 transparent;
 		margin-left: -80px;
 		z-index: 1"></div>
 	</div>
@@ -30,7 +30,7 @@
 		height: 0;
 		border-style: solid;
 		border-width: 0 110px 70px 110px;
-		border-color: transparent transparent #3a94b7 transparent;
+		border-color: transparent transparent #dceff4 transparent;
 		margin-right: -160px;
 		z-index: 1"></div>
 
@@ -38,7 +38,7 @@
 		height: 0;
 		border-style: solid;
 		border-width: 0 140px 100px 140px;
-		border-color: transparent transparent #53aacc transparent;
+		border-color: transparent transparent #f5fbfc transparent;
 		margin-right: -120px;
 		z-index: 2"></div>
 
@@ -46,7 +46,7 @@
 		height: 0;
 		border-style: solid;
 		border-width: 0 190px 140px 190px;
-		border-color: transparent transparent #87ceea transparent;
+		border-color: transparent transparent #eaf8fc transparent;
 		margin-right: -160px;
 		z-index: 3"></div>
 	</div>
