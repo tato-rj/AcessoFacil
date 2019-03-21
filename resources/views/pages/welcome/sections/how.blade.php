@@ -1,5 +1,4 @@
-<section class="container-fluid pb-5" style="background: rgb(238,248,255);
-background: linear-gradient(0deg, rgba(238,248,255,1) 0%, rgba(243,250,255,1) 61%, rgba(255,255,255,1) 100%);">
+<section class="container-fluid mb-8">
 	<div class="row">
 		<div class="col-12 text-center mb-5">
 			<h4 class="m-0">Como funciona</h4>

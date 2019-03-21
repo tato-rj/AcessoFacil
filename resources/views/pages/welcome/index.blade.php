@@ -21,8 +21,8 @@ $(window).scroll(function() {
     let opacity = 1 - scroll/700;
 
     $('#plane').css({'right': flyX, 'top': flyY});
-    $('.mountains').css('transform', 'scale(' + grow + ')');
-    $('.clouds').css('opacity', opacity);
+    $('#skyline').css({'transform': 'scale(' + grow + ')', 'opacity': opacity});
+    // $('.clouds').css('opacity', opacity);
 });
 </script>
 

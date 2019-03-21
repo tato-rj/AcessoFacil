@@ -1,5 +1,4 @@
-<section class="py-5 overflow-hidden" style="background: rgb(240,249,255);
-background: linear-gradient(180deg, rgba(240,249,255,1) 0%, rgba(243,250,255,1) 61%, rgba(255,255,255,1) 100%); height: 600px">
+<section class="py-5 overflow-hidden mb-8">
 	<h4 class="mb-5 text-center">O que dizem os nossos clientes</h4>
 
 	@include('components.testimonials', [

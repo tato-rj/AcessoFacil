@@ -1,4 +1,4 @@
-<section class="container mb-5 pb-5">
+<section class="container mb-8">
 	<div class="row">
 		<div class="col-7 mb-5 mx-auto text-center">
 			<h4 class="mb-4">Conheça os seus direitos</h4>
