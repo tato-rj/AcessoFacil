@@ -46,7 +46,20 @@
 @endif
 
 <script src="{{ mix('js/app.js') }}"></script>
-
+<script type="text/javascript">
+let $runwayPlane = $('#runway-plane');
+let footerHeight = $('#footer-container').height();
+let footerYpos = $('footer').offset().top + footerHeight + 100;
+$(window).scroll(function() {
+    let screenBottom = $(this).scrollTop();
+   
+    if (screenBottom > footerYpos) {
+        $runwayPlane.css('left', '70%');
+    } else {
+        $runwayPlane.css('left', '-20%');        
+    }
+});
+</script>
 @stack('scripts')
 </body>
 </html>

@@ -1,0 +1,22 @@
+/////////////////////
+//// DESCRIPTION ////
+/////////////////////
+
+SERVIÇOS:
+- Documentação para acompanhantes (MEDIF);
+- Documentação para cão guia;
+- Documentação para acessórios (como bateria para cadeira de rodas).
+
+SOLUÇÕES ADMINISTRATIVAS:
+- Voos cancelados;
+- Atrasos de voo;
+- Conexão perdida;
+- Bagagem extraviada;
+- Overbooking;
+- Cadeira de rodas:
+1 – Danificada
+2 – Extraviada: Definitivo / Temporário;
+3 – Não concedida para embarque;
+- Acessibilidade para embarque e desembarque.
+
+PCD = PESSOA COM DEFICIÊNCIA

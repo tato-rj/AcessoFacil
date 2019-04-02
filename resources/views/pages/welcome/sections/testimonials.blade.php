@@ -1,4 +1,4 @@
-<section class="py-5 overflow-hidden mb-8">
+<section class="py-5 overflow-hidden mb-6">
 	<h4 class="mb-5 text-center">O que dizem os nossos clientes</h4>
 
 	@include('components.testimonials', [

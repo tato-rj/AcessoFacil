@@ -12,7 +12,7 @@
 			      	<h6 class="m-0"><i class="fas fa-clock mr-3 text-warning"></i>Atraso de vôos</h6>
 			      </a>
 			      <a class="nav-link p-3 py-2 mb-2" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
-			      	<h6 class="m-0"><i class="fas fa-times-circle mr-3 text-danger"></i>Cancelamento de vôos</h6>
+			      	<h6 class="m-0"><i class="fas fa-wheelchair mr-3 text-danger"></i>Acessibilidade</h6>
 			      </a>
 			      <a class="nav-link p-3 py-2 mb-2" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
 			      	<h6 class="m-0"><i class="fas fa-plane-departure mr-3 text-blue"></i>Perda de conexão</h6>
