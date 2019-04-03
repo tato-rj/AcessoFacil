@@ -24,6 +24,10 @@
         ]); ?>
     </script>
 
+    <style type="text/css">
+        .easy-autocomplete-container {width: auto; white-space: nowrap;}
+    </style>
+
     @stack('header')
 
 </head>
@@ -59,6 +63,20 @@ $(window).scroll(function() {
         $runwayPlane.css('left', '-20%');        
     }
 });
+</script>
+<script type="text/javascript">
+
+var options = {
+    url: function(phrase) {
+        return "http://acessofacil.test/api/airports/autocomplete?input=" + phrase;
+    },
+    getValue: "info",
+    requestDelay: 500
+};
+
+$('#autocomplete-departure').easyAutocomplete(options);
+$('#autocomplete-arrival').easyAutocomplete(options);
+
 </script>
 @stack('scripts')
 </body>

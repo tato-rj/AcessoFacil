@@ -3,7 +3,7 @@
 		<img src="{{asset('images/footer/plane.svg')}}" id="runway-plane" class="z-10" style="width: 220px; position: absolute; left: -20%; bottom: 0; transition-duration: .6s;">
 		<img src="{{asset('images/footer/runway.svg')}}" class="w-100 opacity-4">
 	</div>
-	<footer class="bg-grey-lightest">
+	<footer class="">
 		<div class="container">
 			<div class="row py-5" style="font-size: .9em">
 				<div class="col-12">
