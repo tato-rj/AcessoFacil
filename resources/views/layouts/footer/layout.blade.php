@@ -7,7 +7,7 @@
 		<div class="container">
 			<div class="row py-5" style="font-size: .9em">
 				<div class="col-12">
-					<img src="{{asset('images/brand/logo.svg')}}" class="mb-3" width="146">					
+					<img src="{{asset('images/brand/logo_horizontal.svg')}}" class="mb-3" width="146">					
 				</div>
 				<div class="col-4">
 					<p>Apesar de 8 milhões de pessoas em todo o mundo terem direito a compensação, menos de 2% estão cientes dos seus direitos. Queremos devolver o poder aos passageiros. Chegou a hora de conhecer os seus direitos.</p>

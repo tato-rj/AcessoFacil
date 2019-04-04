@@ -24192,3 +24192,28 @@ button:focus {
   opacity: .6;
 }
 
+.border-primary {
+  border-color: #1b8eff;
+}
+
+.btn-primary {
+  color: white !important;
+  background-color: #1b8eff;
+  border-color: #1b8eff;
+}
+
+.btn-primary:hover {
+  color: white !important;
+  background-color: #006fdd;
+  border-color: #006fdd;
+}
+
+.btn-primary:active {
+  background-color: #0065c8;
+  border-color: #0065c8;
+}
+
+.text-primary {
+  color: #1b8eff;
+}
+

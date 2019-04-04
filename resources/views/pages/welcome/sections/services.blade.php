@@ -22,7 +22,7 @@
 				</div>
 			</div>
 			<div class="text-center">
-				<a href="#" class="btn btn-blue btn-shadow btn-wide"><i class="fas fa-shield-alt mr-2"></i>Solicite a sua documentação</a>
+				<a href="#" class="btn btn-primary btn-shadow btn-wide"><i class="fas fa-shield-alt mr-2"></i>Solicite a sua documentação</a>
 			</div>
 		</div>
 	</div>

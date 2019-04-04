@@ -26,6 +26,10 @@
 
     <style type="text/css">
         .easy-autocomplete-container {width: auto; white-space: nowrap;}
+        .easy-autocomplete {z-index: 1000; width: 34% !important}
+        #finder .button-group {
+            width: 33%;
+        }
     </style>
 
     @stack('header')
@@ -71,7 +75,12 @@ var options = {
         return "http://acessofacil.test/api/airports/autocomplete?input=" + phrase;
     },
     getValue: "info",
-    requestDelay: 500
+    requestDelay: 500,
+    list: {
+        match: {
+            enabled: true
+        }
+    }
 };
 
 $('#autocomplete-departure').easyAutocomplete(options);

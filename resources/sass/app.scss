@@ -49,3 +49,28 @@ button:focus {outline:0;}
 .col-default {
 	@extend .col-lg-8, .col-md-10, .col-12, .mx-auto;
 }
+
+.border-primary {
+    border-color: $blue;
+}
+
+.btn-primary {
+    color: white !important;
+    background-color: $blue;
+    border-color: $blue;
+
+    &:hover {
+        color: white !important;
+        background-color: $blue-dark;
+        border-color: $blue-dark;
+    }
+
+    &:active {
+        background-color: darken($blue-dark, 4%);
+        border-color: darken($blue-dark, 4%);
+    }
+}
+
+.text-primary {
+    color: $blue;
+}
