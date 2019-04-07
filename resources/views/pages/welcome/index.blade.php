@@ -7,7 +7,6 @@
     @include('pages.welcome.sections.services')
     @include('pages.welcome.sections.quote')
     @include('pages.welcome.sections.testimonials')
-    @include('pages.welcome.sections.recommend')
 
 @endsection
 
