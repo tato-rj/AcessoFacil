@@ -21,6 +21,7 @@
     <script>
         window.app = <?php echo json_encode([
             'csrfToken' => csrf_token(),
+            'autocompleteUrl' => route('api.airports.autocomplete')
         ]); ?>
     </script>
 
@@ -72,7 +73,7 @@ $(window).scroll(function() {
 
 var options = {
     url: function(phrase) {
-        return "http://acessofacil.test/api/airports/autocomplete?input=" + phrase;
+        return app.autocompleteUrl + "?input=" + phrase;
     },
     getValue: "info",
     requestDelay: 500,

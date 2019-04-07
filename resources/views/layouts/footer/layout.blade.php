@@ -1,7 +1,7 @@
 <section id="footer-container">
 	<div class="position-relative">
 		<img src="{{asset('images/footer/plane.svg')}}" id="runway-plane" class="z-10" style="width: 220px; position: absolute; left: -20%; bottom: 0; transition-duration: .6s;">
-		<img src="{{asset('images/footer/runway.svg')}}" class="w-100 opacity-4">
+		{{-- <img src="{{asset('images/footer/runway.svg')}}" class="w-100 opacity-4"> --}}
 	</div>
 	<footer class="">
 		<div class="container">
