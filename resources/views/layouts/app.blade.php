@@ -21,13 +21,19 @@
     <script>
         window.app = <?php echo json_encode([
             'csrfToken' => csrf_token(),
-            'autocompleteUrl' => route('api.airports.autocomplete')
+            'iataKey' => env('IATA_KEY')
         ]); ?>
     </script>
 
     <style type="text/css">
-        .easy-autocomplete-container {width: auto; white-space: nowrap;}
-        .easy-autocomplete {z-index: 1000; width: 34% !important}
+        .autocomplete-results > div:not(:last-of-type) {
+            border-bottom: 1px solid lightgrey;
+        }
+        
+        .autocomplete-results > div:hover {
+            background-color: #f2f8fd;
+        }
+
         #finder .button-group {
             width: 33%;
         }
@@ -75,22 +81,6 @@ $(window).scroll(function() {
 });
 </script>
 <script type="text/javascript">
-
-var options = {
-    url: function(phrase) {
-        return app.autocompleteUrl + "?input=" + phrase;
-    },
-    getValue: "info",
-    requestDelay: 500,
-    list: {
-        match: {
-            enabled: true
-        }
-    }
-};
-
-$('#autocomplete-departure').easyAutocomplete(options);
-$('#autocomplete-arrival').easyAutocomplete(options);
 
 </script>
 @stack('scripts')

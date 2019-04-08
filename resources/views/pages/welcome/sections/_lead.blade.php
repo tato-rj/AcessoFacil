@@ -7,7 +7,7 @@
 
 <div class="container h-100">
 	<div class="row h-100 align-items-center">
-		<div class="col-9">
+		<div class="col-12">
 			<div style="max-width: 400px">
 				<h2 class="mb-4 mr-4">Estamos aqui para lutar pelos <strong>seus direitos</strong></h2>
 				<p class="mb-4" style="font-size: 1.15em">Nós somos especializados em indenizações para pessoas com deficiência física (PCD)</p>

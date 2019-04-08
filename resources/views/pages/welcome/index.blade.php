@@ -26,21 +26,77 @@ $(window).scroll(function() {
 });
 </script>
 
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 1,
-        width: 326,
-        initialSlide: $('.swiper-slide').length/2,
-        spaceBetween: 30,
-        centeredSlides: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
+<script>
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    width: 326,
+    initialSlide: $('.swiper-slide').length/2,
+    spaceBetween: 30,
+    centeredSlides: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+</script>
+
+<script type="text/javascript">
+$('.autocomplete input').on('keyup', function() {
+    let $input = $(this);
+    resetResults();
+    showResults($input);
+
+    $.ajax({
+        type: "GET",
+        url: "https://iatacodes.org/api/v6/autocomplete",
+        contentType: "application/json",
+        data: {'api_key': app.iataKey, 'query': 'madrid'},
+        dataType: "jsonp",
+        success: function( response ){
+            console.log(response);
         },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+        error: function( error ){
+            // Log any error.
+            console.log( "ERROR:", error );
         },
+        complete: function(){
+            // When this completes
+        }
     });
-  </script>
+
+    $('.autocomplete-temp > div').on('click', function() {
+        $result = $(this);
+        selectResult($input, $result);
+        resetResults();
+    });
+});
+
+function showResults($input)
+{
+    let val = $input.val();
+    let $resultsContainer = $input.siblings('.autocomplete-results');
+    let $resultsTemp = $resultsContainer.find('.autocomplete-temp');
+    let $resultsModel = $resultsContainer.find('.result-model');
+
+    $resultsTemp.append($resultsModel.clone().removeClass('result-model').show());
+    $resultsContainer.show();
+}
+
+function selectResult($input, $result)
+{
+    let iata = $result.attr('data-iata');
+    let name = $result.find('>div:first-of-type').text();
+
+    $input.val(name).siblings('input').val(iata);
+}
+
+function resetResults()
+{
+    $('.autocomplete-temp').html('').parent().hide();
+}
+</script>
 @endpush
