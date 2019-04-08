@@ -48,8 +48,7 @@ var swiper = new Swiper('.swiper-container', {
 $('.autocomplete input').on('keyup', delay(function() {
     let $input = $(this);
     let val = $input.val();
-    resetResults();
-    showResults($input);
+    // resetResults();
 
     if (val.length >= 2) {
         $.ajax({
