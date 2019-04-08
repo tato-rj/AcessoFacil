@@ -48,7 +48,6 @@ var swiper = new Swiper('.swiper-container', {
 $('.autocomplete input').on('keyup', delay(function() {
     let $input = $(this);
     let val = $input.val();
-    // resetResults();
 
     if (val.length >= 2) {
         $.ajax({
@@ -58,6 +57,7 @@ $('.autocomplete input').on('keyup', delay(function() {
             data: {'api_key': app.iataKey, 'query': val},
             dataType: "jsonp",
             success: function( data ){
+                resetResults();
                 showResults($input, data.response.airports);
 
                 $('.autocomplete-temp > div').on('click', function() {
