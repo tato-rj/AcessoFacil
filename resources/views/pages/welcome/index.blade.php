@@ -45,7 +45,7 @@ var swiper = new Swiper('.swiper-container', {
 </script>
 
 <script type="text/javascript">
-$('.autocomplete input').on('keyup', function() {
+$('.autocomplete input').on('keyup', delay(function() {
     let $input = $(this);
     resetResults();
     showResults($input);
@@ -73,7 +73,7 @@ $('.autocomplete input').on('keyup', function() {
         selectResult($input, $result);
         resetResults();
     });
-});
+}, 500));
 
 function showResults($input)
 {
@@ -97,6 +97,17 @@ function selectResult($input, $result)
 function resetResults()
 {
     $('.autocomplete-temp').html('').parent().hide();
+}
+
+function delay(callback, ms) {
+  var timer = 0;
+  return function() {
+    var context = this, args = arguments;
+    clearTimeout(timer);
+    timer = setTimeout(function () {
+      callback.apply(context, args);
+    }, ms || 0);
+  };
 }
 </script>
 @endpush
