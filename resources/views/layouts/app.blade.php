@@ -26,11 +26,11 @@
     </script>
 
     <style type="text/css">
-        .autocomplete-results > div:not(:last-of-type) {
+        .result-text:not(:last-of-type) {
             border-bottom: 1px solid lightgrey;
         }
         
-        .autocomplete-results > div:hover {
+        .result-text:hover {
             background-color: #f2f8fd;
         }
 

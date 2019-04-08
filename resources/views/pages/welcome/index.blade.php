@@ -47,43 +47,69 @@ var swiper = new Swiper('.swiper-container', {
 <script type="text/javascript">
 $('.autocomplete input').on('keyup', delay(function() {
     let $input = $(this);
+    let val = $input.val();
     resetResults();
     showResults($input);
 
-    $.ajax({
-        type: "GET",
-        url: "https://iatacodes.org/api/v6/autocomplete",
-        contentType: "application/json",
-        data: {'api_key': app.iataKey, 'query': 'madrid'},
-        dataType: "jsonp",
-        success: function( response ){
-            console.log(response);
-        },
-        error: function( error ){
-            // Log any error.
-            console.log( "ERROR:", error );
-        },
-        complete: function(){
-            // When this completes
-        }
-    });
+    if (val.length >= 2) {
+        $.ajax({
+            type: "GET",
+            url: "https://iatacodes.org/api/v7/autocomplete.jsonp",
+            contentType: "application/json",
+            data: {'api_key': app.iataKey, 'query': val},
+            dataType: "jsonp",
+            success: function( data ){
+                showResults($input, data.response.airports);
 
-    $('.autocomplete-temp > div').on('click', function() {
-        $result = $(this);
-        selectResult($input, $result);
+                $('.autocomplete-temp > div').on('click', function() {
+                    $result = $(this);
+                    selectResult($input, $result);
+                    resetResults();
+                });
+            },
+            error: function( error ){
+                // Log any error.
+                console.log( "ERROR:", error );
+            },
+            complete: function(){
+                // When this completes
+            }
+        });
+    } else {
         resetResults();
-    });
+    }
 }, 500));
 
-function showResults($input)
+function showResults($input, data)
 {
     let val = $input.val();
     let $resultsContainer = $input.siblings('.autocomplete-results');
     let $resultsTemp = $resultsContainer.find('.autocomplete-temp');
     let $resultsModel = $resultsContainer.find('.result-model');
 
-    $resultsTemp.append($resultsModel.clone().removeClass('result-model').show());
+    $.each(data, function(index, airport) {
+        let $result = $resultsModel.clone().removeClass('result-model');
+        $result.attr('data-iata', airport.code);
+        $result.children('.result-text > div:first-of-type').text(airport.code + ' - ' + airport.name);
+        $result.children('.result-text > div:last-of-type').text(airport.country_name);
+
+        if (airport.country_name == 'Brazil') {
+            $resultsTemp.prepend($result.show());
+        } else {
+            $resultsTemp.append($result.show());
+        }
+    });
+
     $resultsContainer.show();
+}
+
+String.prototype.replaceAll = function(search, replacement) {
+    return this.replace(new RegExp(search, 'gi'), replacement);
+};
+
+function highlight(str, val)
+{
+    return str.replaceAll(val, '<strong>'+val+'</strong>');
 }
 
 function selectResult($input, $result)
