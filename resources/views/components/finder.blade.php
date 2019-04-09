@@ -3,6 +3,7 @@
     <div class="d-flex shadow z-10">
       <div class="autocomplete">
         <input type="text" class="form-control border border-primary w-100" 
+          required
           data-url="{{route('api.airports.autocomplete')}}" 
           style="padding-left: 52px; height: 62px; padding-right: 32px;  min-width: 280px;
           border-right: none !important; border-top-right-radius: 0; border-bottom-right-radius: 0; box-shadow: none !important;
@@ -13,6 +14,7 @@
       </div>
       <div class="autocomplete">
         <input type="text" class="form-control border border-primary rounded-0 w-100" 
+          required
           data-url="{{route('api.airports.autocomplete')}}" 
           style="padding-left: 52px; height: 62px; border-left: none !important; box-shadow: none !important;
           background-image: url({{asset('images/input/marker.svg')}});
