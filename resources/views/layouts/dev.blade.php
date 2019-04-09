@@ -2,7 +2,7 @@
     <div class="row align-items-center h-100vh">
         <div class="col-lg-4 col-md-6 col-sm-8 col-10 mx-auto text-center">
             <div>
-                <img src="{{asset('images/brand/logo_horizontal.svg')}}" width="200" class="mb-2">
+                <img src="{{asset('images/brand/logo_heart.svg')}}" width="200" class="mb-2">
                 <p class="lead mt-2">O site está em desenvolvimento. Volte em breve ou use o seu password para continuar.</p>            
             </div>
 
