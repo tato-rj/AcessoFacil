@@ -1,5 +1,5 @@
 <section class="py-5 container">
-	<h4 class="text-center">Notícias online</h4>
+	<h4 class="text-center">De olho nas notícias</h4>
 	<div class="row">
 		@foreach($news as $article)
 		<div class="col-4 p-4">
