@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 
 class GateController
 {
-	const PASS = 'aindanao';
+	const PASS = 'quinteto';
 
 	public static function auth()
 	{
