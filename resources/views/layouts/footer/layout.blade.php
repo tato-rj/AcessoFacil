@@ -1,13 +1,13 @@
 <section id="footer-container">
 	<div class="position-relative">
 		<img src="{{asset('images/footer/plane.svg')}}" id="runway-plane" class="z-10" style="width: 220px; position: absolute; left: -20%; bottom: 0; transition-duration: .6s;">
-		<img src="{{asset('images/footer/runway.svg')}}" class="d-block mx-auto opacity-4" style="width: 88%">
+		<img src="{{asset('images/footer/runway.svg')}}" class="d-block mx-auto opacity-4" style="width: 86%">
 	</div>
 	<footer class="">
 		<div class="container">
 			<div class="row py-5">
 				<div class="col-12 mb-4 d-apart">
-					<img src="{{asset('images/brand/logo_horizontal.svg')}}" width="146">					
+					<img src="{{asset('images/brand/logo_heart.svg')}}" width="146">					
 					<ul class="d-flex list-flat social-icons">
 						<li class="mx-2 text-grey">Siga-nos nas redes sociais</li>
 						<li class="mx-2 text-grey"><a href="#" class="link-inherit"><i class="fab fa-lg fa-facebook-f"></i></a></li>
@@ -38,10 +38,10 @@
 				<div class="col-3">
 					<p class="mb-1"><strong>Suporte</strong></p>
 					<ul class="list-flat">
+						<li class="mb-1"><a href="#" class="link-none">Blog</a></li>
 						<li class="mb-1"><a href="#" class="link-none">Solicitar indenização</a></li>
 						<li class="mb-1"><a href="#" class="link-none">Perguntas frequentes</a></li>
 						<li class="mb-1"><a href="#" class="link-none">Ajuda</a></li>
-						<li class="mb-1"><a href="#" class="link-none">Blog</a></li>
 					</ul>
 				</div>
 			</div>

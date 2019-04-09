@@ -15,7 +15,7 @@
 			@include('components.finder')
 		</div>
 	</div>
-	<div class="position-absolute w-100 opacity-4" style="bottom: 0; left: 0; overflow: hidden; z-index: -1">
+	<div class="position-absolute w-100" style="bottom: 0; left: 0; overflow: hidden; z-index: -1; opacity: .3">
 		<img src="{{asset('images/backgrounds/welcome/skyline.svg')}}" class="w-100" id="skyline">
 	</div>
 

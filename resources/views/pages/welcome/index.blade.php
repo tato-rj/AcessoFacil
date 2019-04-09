@@ -6,12 +6,13 @@
     @include('pages.welcome.sections.rights')
     @include('pages.welcome.sections.services')
     @include('pages.welcome.sections.quote')
-    @include('pages.welcome.sections.testimonials')
+    @include('components.news')
+    @include('components.testimonials')
 
 @endsection
 
 @push('scripts')
-
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 <script type="text/javascript">
 $(window).scroll(function() {
     let scroll = $(this).scrollTop();
@@ -20,12 +21,14 @@ $(window).scroll(function() {
     let grow = 1 + scroll/2600;
     let opacity = 1 - scroll/700;
 
-    $('#plane').css({'right': flyX, 'top': flyY});
     $('#skyline').css({'transform': 'scale(' + grow + ')', 'opacity': opacity});
-    // $('.clouds').css('opacity', opacity);
 });
 </script>
-
+<script type="text/javascript">
+function showNews() {
+    console.log('test!');
+};
+</script>
 <script>
 var swiper = new Swiper('.swiper-container', {
     slidesPerView: 1,
@@ -42,6 +45,7 @@ var swiper = new Swiper('.swiper-container', {
         prevEl: '.swiper-button-prev',
     },
 });
+
 </script>
 
 <script type="text/javascript">
