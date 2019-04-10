@@ -18,7 +18,7 @@
 				<div class="col-6 text-center py-4 px-6">
 					<img src="{{asset('images/icons/document.svg')}}" style="width: 80px;" class="mb-4">
 					<h5 class="mb-3">Documentação para acessórios</h5>
-					<p>Adquira a documentação adequada para bateria deDireito dos acompanhantes de PCD cadeira de rodas e outros acessórios.</p>
+					<p>Adquira a documentação adequada para bateria de cadeira de rodas e outros acessórios.</p>
 				</div>
 				<div class="col-6 text-center py-4 px-6">
 					<img src="{{asset('images/icons/shield.svg')}}" style="width: 80px;" class="mb-4">
