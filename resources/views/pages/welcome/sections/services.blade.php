@@ -23,7 +23,7 @@
 				<div class="col-6 text-center py-4 px-6">
 					<img src="{{asset('images/icons/shield.svg')}}" style="width: 80px;" class="mb-4">
 					<h5 class="mb-3">Serviços administrativos</h5>
-					<p>Cartão de estacionamento para PCD, recurso de multas de trânsito e cartão de gratuidade para transporte público.</p>
+					<p>Cartão de estacionamento para PCD, recurso de multas de trânsito, gratuidade para transporte público e isenção de imposto de renda.</p>
 				</div>
 			</div>
 			<div class="text-center">
