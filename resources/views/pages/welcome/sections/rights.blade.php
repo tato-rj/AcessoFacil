@@ -9,7 +9,7 @@
 			  <div class="col-4">
 			    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 			      <a class="nav-link p-3 mb-2 active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
-			      	<h6 class="m-0"><i class="fas fa-clock mr-3 text-warning"></i>Atraso de vôos</h6>
+			      	<h6 class="m-0"><i class="fas fa-clock mr-3 text-warning"></i>Atraso de voos</h6>
 			      </a>
 			      <a class="nav-link p-3 py-2 mb-2" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
 			      	<h6 class="m-0"><i class="fas fa-wheelchair mr-3 text-danger"></i>Acessibilidade</h6>
@@ -26,7 +26,7 @@
 			    <div class="tab-content" id="v-pills-tabContent">
 			      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Purus gravida quis blandit turpis cursus in hac habitasse. Eu non diam phasellus vestibulum lorem. Arcu felis bibendum ut tristique et egestas quis. Faucibus nisl tincidunt eget nullam non nisi. Semper feugiat nibh sed pulvinar proin. Nisi vitae suscipit tellus mauris a diam maecenas sed.</p>
-					<a href="#" class="link-blue">Mais sobre atraso de vôos<i class="fas fa-long-arrow-alt-right align-middle ml-3"></i></a>
+					<a href="#" class="link-blue">Mais sobre atraso de voos<i class="fas fa-long-arrow-alt-right align-middle ml-3"></i></a>
 			      </div>
 			      <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
 			      	<p>Non sodales neque sodales ut. Ipsum nunc aliquet bibendum enim. Netus et malesuada fames ac. At erat pellentesque adipiscing commodo elit at. Et malesuada fames ac turpis egestas maecenas. Quam viverra orci sagittis eu volutpat odio. Eget sit amet tellus cras. Massa placerat duis ultricies lacus. Eu non diam phasellus vestibulum lorem sed risus ultricies. Montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada. Quisque egestas diam in arcu cursus euismod quis viverra nibh.</p>
